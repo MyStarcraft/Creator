@@ -7,16 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyStarcraft_Creator.UserControls;
 
 namespace MyStarcraft_Creator
 {
-    public partial class NewPlayer : UserControl
+    public partial class NewPlayer : NewUserControl
     {
         public NewPlayer()
         {
             InitializeComponent();
-
-            imageProfile.Click += changeProfileImage;
         }
 
         private void changeProfileImage(Object sender, EventArgs e)
@@ -24,7 +23,12 @@ namespace MyStarcraft_Creator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NewPlayer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

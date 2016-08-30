@@ -31,7 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonNewPlayer = new System.Windows.Forms.ToolStripMenuItem();
-            this.newMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonNewMap = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,28 +51,43 @@
             // 
             this.createToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buttonNewPlayer,
-            this.newMapToolStripMenuItem});
+            this.buttonNewMap,
+            this.openToolStripMenuItem});
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
-            this.createToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.createToolStripMenuItem.Text = "Create";
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.createToolStripMenuItem.Text = "Edit";
             // 
             // buttonNewPlayer
             // 
             this.buttonNewPlayer.Name = "buttonNewPlayer";
-            this.buttonNewPlayer.Size = new System.Drawing.Size(134, 22);
+            this.buttonNewPlayer.Size = new System.Drawing.Size(152, 22);
             this.buttonNewPlayer.Text = "New Player";
             // 
-            // newMapToolStripMenuItem
+            // buttonNewMap
             // 
-            this.newMapToolStripMenuItem.Name = "newMapToolStripMenuItem";
-            this.newMapToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.newMapToolStripMenuItem.Text = "New Map";
+            this.buttonNewMap.Name = "buttonNewMap";
+            this.buttonNewMap.Size = new System.Drawing.Size(152, 22);
+            this.buttonNewMap.Text = "New Map";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            // 
+            // panelMain
+            // 
+            this.panelMain.Location = new System.Drawing.Point(13, 28);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(564, 420);
+            this.panelMain.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 460);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -87,7 +104,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buttonNewPlayer;
-        private System.Windows.Forms.ToolStripMenuItem newMapToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buttonNewMap;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
 
