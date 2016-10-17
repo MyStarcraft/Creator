@@ -12,6 +12,8 @@ namespace MyStarcraft_Creator.UserControls
 {
     public partial class NewUserControl : UserControl
     {
+        protected string name;
+
         public NewUserControl()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace MyStarcraft_Creator.UserControls
             imageProfile.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void changeProfileImage(Object sender, EventArgs e)
+        private void changeProfileImage(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "All image files|*.jpg; *.jpeg; *.png; *.gif";
@@ -32,6 +34,16 @@ namespace MyStarcraft_Creator.UserControls
                 String filePath = dialog.FileName;
                 imageProfile.ImageLocation = filePath;
             }
+        }
+
+        public virtual void save()
+        {
+
+        }
+
+        public string getName()
+        {
+            return textBoxName.Text;
         }
     }
 }

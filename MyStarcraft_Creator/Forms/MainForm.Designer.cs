@@ -34,6 +34,7 @@
             this.buttonNewMap = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.toolTipButtonSave = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@
             this.createToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buttonNewPlayer,
             this.buttonNewMap,
-            this.openToolStripMenuItem});
+            this.openToolStripMenuItem,
+            this.toolTipButtonSave});
             this.createToolStripMenuItem.Name = "createToolStripMenuItem";
             this.createToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.createToolStripMenuItem.Text = "Edit";
@@ -82,6 +84,12 @@
             this.panelMain.Size = new System.Drawing.Size(564, 420);
             this.panelMain.TabIndex = 1;
             // 
+            // toolTipButtonSave
+            // 
+            this.toolTipButtonSave.Name = "toolTipButtonSave";
+            this.toolTipButtonSave.Size = new System.Drawing.Size(152, 22);
+            this.toolTipButtonSave.Text = "Save";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -92,6 +100,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -107,6 +116,7 @@
         private System.Windows.Forms.ToolStripMenuItem buttonNewMap;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.ToolStripMenuItem toolTipButtonSave;
     }
 }
 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.imageProfile = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageProfile)).BeginInit();
             this.SuspendLayout();
@@ -44,12 +44,12 @@
             this.imageProfile.TabStop = false;
             this.imageProfile.WaitOnLoad = true;
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 172);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 21);
-            this.textBox1.TabIndex = 1;
+            this.textBoxName.Location = new System.Drawing.Point(38, 172);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(117, 21);
+            this.textBoxName.TabIndex = 1;
             // 
             // label1
             // 
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.imageProfile);
             this.Name = "NewUserControl";
             this.Size = new System.Drawing.Size(364, 259);
@@ -78,7 +78,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox imageProfile;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label1;
     }
 }
